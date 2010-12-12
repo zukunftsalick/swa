@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  lat: 1.5
+  lng: 1.5
+  street_address: MyString
+  zipcode: MyString
+
+two:
+  lat: 1.5
+  lng: 1.5
+  street_address: MyString
+  zipcode: MyString

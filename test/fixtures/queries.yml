@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  origin_ip: MyString
+  destination_address: MyString
+  distance: 1.5
+
+two:
+  origin_ip: MyString
+  destination_address: MyString
+  distance: 1.5

@@ -1,0 +1,10 @@
+<% title "Retailers" %>
+
+<% for retailer in @retailers %>
+  <div class="retailer">
+    <h3>
+      <%= retailer.lat %>, 
+      <%= retailer.lng %> -
+    </h3>
+  </div>
+<% end %>
