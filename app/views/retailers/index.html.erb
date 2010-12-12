@@ -3,8 +3,8 @@
 <% for retailer in @retailers %>
   <div class="retailer">
     <h3>
-      <%= retailer.lat %>, 
-      <%= retailer.lng %> -
+      <%= retailer.name %><br/>  
+      <small><%= retailer.full_address %></small>
     </h3>
   </div>
 <% end %>

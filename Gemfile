@@ -1,7 +1,8 @@
 source 'http://rubygems.org'
 
 gem 'rails', '3.0.3'
-gem "nifty-generators"
+gem 'nifty-generators'
+gem 'graticule'
 
 
 # Bundle edge Rails instead:
@@ -34,4 +35,6 @@ gem 'sqlite3-ruby', :require => 'sqlite3'
 
 group :test do
   gem 'factory_girl_rails'
+	gem 'fakeweb'
+	gem 'mocha'
 end
