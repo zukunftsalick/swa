@@ -99,3 +99,11 @@ input {
 ol li {
 	margin-bottom:0.5em;
 }
+#btnInit {
+	text-align: left;
+}
+
+#btnForm {
+	float:right;
+	text-align:right;
+}
