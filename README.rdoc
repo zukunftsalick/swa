@@ -1,2 +1,3 @@
 == How to run
-	<tt>rake db:migrate; rake db:seed; rails server</tt>
+From the application root:
+	rake db:migrate; rake db:seed; rails server
