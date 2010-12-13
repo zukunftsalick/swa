@@ -1,10 +1,11 @@
 <% title "Retailers" %>
 
-<% for retailer in @retailers %>
+<h3>All Retailers</h3>
+<% @retailers.each do |retailer| %>
   <div class="retailer">
-    <h3>
+    <h4>
       <%= retailer.name %><br/>  
       <small><%= retailer.full_address %></small>
-    </h3>
+    </h4>
   </div>
 <% end %>

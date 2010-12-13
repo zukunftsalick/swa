@@ -73,3 +73,29 @@ a {
 .error_messages ul {
   margin: 0;
 }
+
+.map {
+	text-align: center;
+	display: none;
+}
+
+.spinner {
+	text-align:center;
+	display: none;
+}
+
+.action-buttons{
+	margin-bottom:1em;
+}
+
+.form {
+	display:none;
+}
+
+input {
+	margin-bottom:1em;
+}
+
+ol li {
+	margin-bottom:0.5em;
+}

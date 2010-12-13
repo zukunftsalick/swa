@@ -1,0 +1,8 @@
+<% title "Retailers Search" %>
+
+<div class="retailer">
+	<h4>
+		<%= @query.retailer.name %> - (<%= @query.distance.round(2) %> miles)<br/>  
+		<small><%= @query.retailer.full_address %></small>
+	</h4>
+</div>

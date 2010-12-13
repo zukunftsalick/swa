@@ -1,0 +1,25 @@
+<% title('Welcome, select your location:')%>
+<div class='action-buttons'>  
+	<button id='btnInit' >Find my address automatically (uses HTML 5 geolocation)</button> <br/>
+	<button id='btnForm' >Add your address manually (uses HTML form)</button>
+</div>
+<div class='form'>
+	<%= form_tag welcome_user_localization_path do %>
+		<%= label :localization, :address %>:
+		<%= text_field :localization, :address, :placeholder => '100 Canal Street' %><br/>
+		<%= label :localization, :zipcode %>:
+		<%= text_field :localization, :zipcode, :placeholder => '01302' %> <br/>
+		<%= submit_tag "send" %>
+	<% end %>
+</div>
+<div class="map">
+	<%= form_tag welcome_html_localization_path do %>
+		<%= hidden_field_tag :latitude, ''  %>
+		<%= hidden_field_tag :longitude, ''  %>
+		<%= submit_tag "It's correct, confirm it!" %>
+	<% end %>
+</div>
+<div class='spinner'>
+	<%= image_tag 'spinner.gif' %>
+</div>
+

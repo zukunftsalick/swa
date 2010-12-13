@@ -1,0 +1,223 @@
+--- 
+- !ruby/struct:VCR::HTTPInteraction 
+  request: !ruby/struct:VCR::Request 
+    method: :get
+    uri: http://maps.google.com:80/maps/geo?key=ABQIAAAAZsMlbTQfrUur16nkXEq76RTJQa0g3IQ9GZqIMmInSLzwtGDKaBS4kcpLqvObUdVmEir0iZ7hBlh&oe=utf8&output=xml&q=10.3,%20-40.2&sensor=false
+    body: 
+    headers: 
+      user-agent: 
+      - Mozilla/5.0 (compatible; Graticule; http://graticule.rubyforge.org)
+  response: !ruby/struct:VCR::Response 
+    status: !ruby/struct:VCR::ResponseStatus 
+      code: 200
+      message: OK
+    headers: 
+      content-type: 
+      - text/xml; charset=UTF-8
+      date: 
+      - Sun, 12 Dec 2010 18:35:43 GMT
+      server: 
+      - mafe
+      x-xss-protection: 
+      - 1; mode=block
+      vary: 
+      - Accept-Language
+      cache-control: 
+      - private, x-gzip-ok=""
+      transfer-encoding: 
+      - chunked
+    body: |
+      <?xml version="1.0" encoding="UTF-8" ?>
+      <kml xmlns="http://earth.google.com/kml/2.0"><Response>
+        <name>10.3, -40.2</name>
+        <Status>
+          <code>200</code>
+          <request>geocode</request>
+        </Status>
+        <Placemark id="p1">
+          <address>North Atlantic Ocean</address>
+          <AddressDetails Accuracy="0" xmlns="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0"><AddressLine>North Atlantic Ocean</AddressLine></AddressDetails>
+          <ExtendedData>
+            <LatLonBox north="64.0144968" south="-7.3624690" east="26.1035168" west="-105.0292988" />
+          </ExtendedData>
+          <Point><coordinates>-39.4628910,35.7465120,0</coordinates></Point>
+        </Placemark>
+      </Response></kml>
+
+    http_version: "1.1"
+- !ruby/struct:VCR::HTTPInteraction 
+  request: !ruby/struct:VCR::Request 
+    method: :get
+    uri: http://maps.google.com:80/maps/geo?key=ABQIAAAAZsMlbTQfrUur16nkXEq76RTJQa0g3IQ9GZqIMmInSLzwtGDKaBS4kcpLqvObUdVmEir0iZ7hBlh&oe=utf8&output=xml&q=10.3,%20-40.2&sensor=false
+    body: 
+    headers: 
+      user-agent: 
+      - Mozilla/5.0 (compatible; Graticule; http://graticule.rubyforge.org)
+  response: !ruby/struct:VCR::Response 
+    status: !ruby/struct:VCR::ResponseStatus 
+      code: 200
+      message: OK
+    headers: 
+      content-type: 
+      - text/xml; charset=UTF-8
+      date: 
+      - Sun, 12 Dec 2010 18:35:44 GMT
+      server: 
+      - mafe
+      x-xss-protection: 
+      - 1; mode=block
+      vary: 
+      - Accept-Language
+      cache-control: 
+      - private, x-gzip-ok=""
+      transfer-encoding: 
+      - chunked
+    body: |
+      <?xml version="1.0" encoding="UTF-8" ?>
+      <kml xmlns="http://earth.google.com/kml/2.0"><Response>
+        <name>10.3, -40.2</name>
+        <Status>
+          <code>200</code>
+          <request>geocode</request>
+        </Status>
+        <Placemark id="p1">
+          <address>North Atlantic Ocean</address>
+          <AddressDetails Accuracy="0" xmlns="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0"><AddressLine>North Atlantic Ocean</AddressLine></AddressDetails>
+          <ExtendedData>
+            <LatLonBox north="64.0144968" south="-7.3624690" east="26.1035168" west="-105.0292988" />
+          </ExtendedData>
+          <Point><coordinates>-39.4628910,35.7465120,0</coordinates></Point>
+        </Placemark>
+      </Response></kml>
+
+    http_version: "1.1"
+- !ruby/struct:VCR::HTTPInteraction 
+  request: !ruby/struct:VCR::Request 
+    method: :get
+    uri: http://maps.google.com:80/maps/geo?key=ABQIAAAAZsMlbTQfrUur16nkXEq76RTJQa0g3IQ9GZqIMmInSLzwtGDKaBS4kcpLqvObUdVmEir0iZ7hBlh&oe=utf8&output=xml&q=-122.083739,%2037.423021&sensor=false
+    body: 
+    headers: 
+      user-agent: 
+      - Mozilla/5.0 (compatible; Graticule; http://graticule.rubyforge.org)
+  response: !ruby/struct:VCR::Response 
+    status: !ruby/struct:VCR::ResponseStatus 
+      code: 200
+      message: OK
+    headers: 
+      content-type: 
+      - text/xml; charset=UTF-8
+      x-xss-protection: 
+      - 1; mode=block
+      server: 
+      - mafe
+      date: 
+      - Sun, 12 Dec 2010 18:40:58 GMT
+      cache-control: 
+      - private, x-gzip-ok=""
+      vary: 
+      - Accept-Language
+      transfer-encoding: 
+      - chunked
+    body: |
+      <?xml version="1.0" encoding="UTF-8" ?>
+      <kml xmlns="http://earth.google.com/kml/2.0"><Response>
+        <name>-122.083739, 37.423021</name>
+        <Status>
+          <code>602</code>
+          <request>geocode</request>
+        </Status>
+      </Response></kml>
+
+    http_version: "1.1"
+- !ruby/struct:VCR::HTTPInteraction 
+  request: !ruby/struct:VCR::Request 
+    method: :get
+    uri: http://maps.google.com:80/maps/geo?key=ABQIAAAAZsMlbTQfrUur16nkXEq76RTJQa0g3IQ9GZqIMmInSLzwtGDKaBS4kcpLqvObUdVmEir0iZ7hBlh&oe=utf8&output=xml&q=37.423021,%20-122.083739&sensor=false
+    body: 
+    headers: 
+      user-agent: 
+      - Mozilla/5.0 (compatible; Graticule; http://graticule.rubyforge.org)
+  response: !ruby/struct:VCR::Response 
+    status: !ruby/struct:VCR::ResponseStatus 
+      code: 200
+      message: OK
+    headers: 
+      content-type: 
+      - text/xml; charset=UTF-8
+      date: 
+      - Sun, 12 Dec 2010 18:48:08 GMT
+      server: 
+      - mafe
+      x-xss-protection: 
+      - 1; mode=block
+      vary: 
+      - Accept-Language
+      cache-control: 
+      - private, x-gzip-ok=""
+      transfer-encoding: 
+      - chunked
+    body: |
+      <?xml version="1.0" encoding="UTF-8" ?>
+      <kml xmlns="http://earth.google.com/kml/2.0"><Response>
+        <name>37.423021, -122.083739</name>
+        <Status>
+          <code>200</code>
+          <request>geocode</request>
+        </Status>
+        <Placemark id="p1">
+          <address>1600 Amphitheatre Pkwy, Mountain View, CA 94043, USA</address>
+          <AddressDetails Accuracy="8" xmlns="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0"><Country><CountryNameCode>US</CountryNameCode><CountryName>USA</CountryName><AdministrativeArea><AdministrativeAreaName>CA</AdministrativeAreaName><SubAdministrativeArea><SubAdministrativeAreaName>Santa Clara</SubAdministrativeAreaName><Locality><LocalityName>Mountain View</LocalityName><Thoroughfare><ThoroughfareName>1600 Amphitheatre Pkwy</ThoroughfareName></Thoroughfare><PostalCode><PostalCodeNumber>94043</PostalCodeNumber></PostalCode></Locality></SubAdministrativeArea></AdministrativeArea></Country></AddressDetails>
+          <ExtendedData>
+            <LatLonBox north="37.4262191" south="37.4199238" east="-122.0810420" west="-122.0873372" />
+          </ExtendedData>
+          <Point><coordinates>-122.0837403,37.4229971,0</coordinates></Point>
+        </Placemark>
+      </Response></kml>
+
+    http_version: "1.1"
+- !ruby/struct:VCR::HTTPInteraction 
+  request: !ruby/struct:VCR::Request 
+    method: :get
+    uri: http://example.com:80/
+    body: 
+    headers: 
+  response: !ruby/struct:VCR::Response 
+    status: !ruby/struct:VCR::ResponseStatus 
+      code: 200
+      message: OK
+    headers: 
+      etag: 
+      - "\"573c1-254-48c9c87349680\""
+      last-modified: 
+      - Fri, 30 Jul 2010 15:30:18 GMT
+      content-type: 
+      - text/html; charset=UTF-8
+      date: 
+      - Sun, 12 Dec 2010 18:54:53 GMT
+      server: 
+      - Apache
+      content-length: 
+      - "596"
+      age: 
+      - "918"
+      accept-ranges: 
+      - bytes
+    body: |
+      <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+      <HTML>
+      <HEAD>
+        <META http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <TITLE>Example Web Page</TITLE>
+      </HEAD> 
+      <body>  
+      <p>You have reached this web page by typing &quot;example.com&quot;,
+      &quot;example.net&quot;,&quot;example.org&quot
+        or &quot;example.edu&quot; into your web browser.</p>
+      <p>These domain names are reserved for use in documentation and are not available 
+        for registration. See <a href="http://www.rfc-editor.org/rfc/rfc2606.txt">RFC 
+        2606</a>, Section 3.</p>
+      </BODY>
+      </HTML>
+      
+
+    http_version: "1.1"

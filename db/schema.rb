@@ -13,9 +13,11 @@
 ActiveRecord::Schema.define(:version => 20101212051132) do
 
   create_table "queries", :force => true do |t|
-    t.string   "origin_ip"
+    t.integer  "user_id"
     t.string   "destination_address"
     t.float    "distance"
+    t.string   "query_term"
+    t.integer  "retailer_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -31,11 +33,11 @@ ActiveRecord::Schema.define(:version => 20101212051132) do
   end
 
   create_table "users", :force => true do |t|
-    t.string   "name"
     t.string   "address"
     t.string   "zipcode"
     t.float    "lat"
     t.float    "lng"
+    t.string   "ip"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

@@ -1,0 +1,8 @@
+<% title "Your saved searches" %>
+
+<h3> You searched for: </h3>
+<ol>
+	<% @queries.each do |query| %>
+ 		<li><%= link_to query.query_term, retailers_search_path(:query => {:query_term => query.query_term.to_param}) %></li>  
+	<% end %>
+</ol>

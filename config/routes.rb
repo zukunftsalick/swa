@@ -1,5 +1,13 @@
 Swa::Application.routes.draw do
   
+  get "queries/index"
+
+  get "welcome/index"
+  post "welcome/html_localization"
+  post "welcome/user_localization"
+  get "retailers/search"
+  get "queries/index"
+
   resources :retailers
   # The priority is based upon order of creation:
   # first created -> highest priority.
@@ -50,7 +58,7 @@ Swa::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  root :to => "retailers#index"
+  root :to => "welcome#index"
 
   # See how all your routes lay out with "rake routes"
 

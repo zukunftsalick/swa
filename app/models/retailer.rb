@@ -1,6 +1,6 @@
 class Retailer < ActiveRecord::Base
-  
+  has_many :queries
   def full_address
-    self.street_address + ', ' + self.zipcode
+    street_address + ', ' + zipcode
   end
 end

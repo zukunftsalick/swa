@@ -1,19 +1,14 @@
-require 'graticule'
 class Geocoder
   def initialize(address)
-    @geocoder = Graticule.service(:google).new(GOOGLE_MAPS_API_KEY)
-    begin
-      @location = @geocoder.locate(address)
-    rescue Exception
-      @location = nil
-    end
+    @geocoder = Geokit::Geocoders::GoogleGeocoder.geocode(address)
   end
   
   def location
-    @location
+    @geocoder
   end
   
   def distance_to(address)
-    @location.distance_to(@geocoder.locate(address))
+    puts address
+    @geocoder.distance_to(Geokit::Geocoders::GoogleGeocoder.geocode(address))
   end
 end
